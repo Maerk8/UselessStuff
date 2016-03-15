@@ -11,15 +11,64 @@
     android:orientation="vertical"
     android:weightSum="1">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Website Name"
+        android:id="@+id/txtWebsiteName"
+        android:layout_gravity="center_horizontal" />
+
     <WebView
-        android:layout_width="match_parent"
+        android:layout_width="358dp"
         android:layout_height="wrap_content"
         android:id="@+id/vwWebMain"
-        android:layout_weight="0.97" />
+        android:layout_weight="0.80" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uselessness"
+        android:id="@+id/txtUseless"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.02" />
 
     <SeekBar
         android:layout_width="345dp"
         android:layout_height="wrap_content"
-        android:id="@+id/seekBar" />
+        android:id="@+id/sbUseless" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usefulness"
+        android:id="@+id/txtUseful"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+
+    <SeekBar
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sbUseful" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Randomness"
+        android:id="@+id/txtRandom"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sbRandom"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
