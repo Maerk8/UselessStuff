@@ -6,6 +6,7 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 import java.util.Objects;
 
@@ -16,6 +17,7 @@ public class WebWear extends AppCompatActivity {
     public static SeekBar sbUseless;
     public static SeekBar sbUseful;
     public static SeekBar sbRandom;
+    public static TextView txtWebSite;
 
     public static int Usefulness;
     public static int Uselessness;
@@ -32,6 +34,8 @@ public class WebWear extends AppCompatActivity {
         sbUseful = (SeekBar) findViewById(R.id.sbUseful);
         sbRandom = (SeekBar) findViewById(R.id.sbRandom);
 
+        txtWebSite = (TextView) findViewById(R.id.txtWebsiteName);
+
         sbUseless.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -43,6 +47,7 @@ public class WebWear extends AppCompatActivity {
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
                     wvWebMain.loadUrl("http://www.everydayim.com/");
+                    txtWebSite.setText("http//www.everydayim.com/");
 
 
                 }
@@ -52,6 +57,7 @@ public class WebWear extends AppCompatActivity {
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
                     wvWebMain.loadUrl("http://www.sanger.dk/");
+                    txtWebSite.setText("http://www.sanger.dk/");
 
                 }
 
@@ -61,6 +67,7 @@ public class WebWear extends AppCompatActivity {
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
                     wvWebMain.loadUrl("http://www.taghua.com/");
+                    txtWebSite.setText("http://www.taghua.com/");
 
                 }
                 else if (Uselessness < Usefulness && Uselessness < Randomness) {
@@ -69,7 +76,7 @@ public class WebWear extends AppCompatActivity {
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
                     wvWebMain.loadUrl("http://tencents.info/");
-
+                    txtWebSite.setText("http://tencents.info/");
 
                 }
 
@@ -79,6 +86,7 @@ public class WebWear extends AppCompatActivity {
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
                     wvWebMain.loadUrl("http://leekspin.com/");
+                    txtWebSite.setText("http://leekspin.com/");
 
                 }
             }
