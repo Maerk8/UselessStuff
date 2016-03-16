@@ -2,6 +2,7 @@ package com.example.student.uselessstuff;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.SeekBar;
@@ -19,7 +20,6 @@ public class WebWear extends AppCompatActivity {
     public static int Usefulness;
     public static int Uselessness;
     public static int Randomness;
-    public static String URL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,21 +32,398 @@ public class WebWear extends AppCompatActivity {
         sbUseful = (SeekBar) findViewById(R.id.sbUseful);
         sbRandom = (SeekBar) findViewById(R.id.sbRandom);
 
+        sbUseless.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                Uselessness = progress;
 
-        //WebView set settings/creation of pages
-        WebSettings webSettings = wvWebMain.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        wvWebMain.loadUrl("http://www.everydayim.com/");
+                if (Uselessness > Usefulness && Uselessness > Randomness) {
 
-        Object[] values = new Object[50];
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://www.everydayim.com/");
 
-        values[1] = new String("test");
-        values[1] = new Integer(Usefulness);
-        System.out.print(values[1]);
+
+                }
+                else if (Uselessness < Usefulness && Uselessness > Randomness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://www.sanger.dk/");
+
+                }
+
+                else if (Uselessness > Usefulness && Uselessness < Randomness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://www.taghua.com/");
+
+                }
+                else if (Uselessness < Usefulness && Uselessness < Randomness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://tencents.info/");
+
+
+                }
+
+                else {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://leekspin.com/");
+
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        sbUseful.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                Usefulness = progress;
+
+                if (Usefulness > Uselessness && Usefulness > Randomness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+
+                }
+                else if (Usefulness < Uselessness && Usefulness > Randomness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+                }
+
+                else if (Usefulness > Uselessness && Usefulness < Randomness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+                }
+                else if (Usefulness < Uselessness && Usefulness < Randomness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+
+                }
+
+                else {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        sbRandom.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                Randomness = progress;
+
+                if (Randomness > Usefulness && Randomness > Uselessness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+
+                }
+                else if (Randomness < Usefulness && Randomness > Uselessness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+                }
+
+                else if (Randomness > Usefulness && Randomness < Uselessness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+                }
+                else if (Randomness < Usefulness && Randomness < Uselessness) {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+
+                }
+
+                else {
+
+//WebView set settings/creation of pages
+                    WebSettings webSettings = wvWebMain.getSettings();
+                    webSettings.setJavaScriptEnabled(true);
+                    wvWebMain.loadUrl("http://");
+
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+    }
+   /* public void Seekinthebar(View vw){
+
+        wvWebMain = (WebView) findViewById(R.id.vwWebMain);
+
+        sbUseless = (SeekBar) findViewById(R.id.sbUseless);
+        sbUseful = (SeekBar) findViewById(R.id.sbUseful);
+        sbRandom = (SeekBar) findViewById(R.id.sbRandom);
+
+
+        SeekBar.OnSeekBarChangeListener sbUseless= new SeekBar.OnSeekBarChangeListener() {
+
+                    @Override
+                    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                        Uselessness = progress;
+
+                        if (Uselessness > Usefulness && Uselessness > Randomness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://www.everydayim.com/");
+
+
+                        }
+                        else if (Uselessness < Usefulness && Uselessness > Randomness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://www.sanger.dk/");
+
+                        }
+
+                        else if (Uselessness > Usefulness && Uselessness < Randomness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://www.taghua.com/");
+
+                        }
+                        else if (Uselessness < Usefulness && Uselessness < Randomness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://tencents.info/");
+
+
+                        }
+
+                        else {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://leekspin.com/");
+
+                        }
+
+                    }
+                    @Override
+                    public void onStartTrackingTouch( SeekBar seekBar) {
+
+
+                    }
+                    @Override
+                    public void onStopTrackingTouch( SeekBar seekBar) {
+
+
+                    }
+
+                };
+
+        SeekBar.OnSeekBarChangeListener sbUseful = new SeekBar.OnSeekBarChangeListener() {
+
+                    @Override
+                    public void onProgressChanged( SeekBar seekBar, int progress, boolean fromUser) {
+                        Usefulness = progress;
+
+                        if (Usefulness > Uselessness && Usefulness > Randomness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+
+                        }
+                        else if (Usefulness < Uselessness && Usefulness > Randomness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+                        }
+
+                        else if (Usefulness > Uselessness && Usefulness < Randomness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+                        }
+                        else if (Usefulness < Uselessness && Usefulness < Randomness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+
+                        }
+
+                        else {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+                        }
+
+                    }
+                    @Override
+                    public void onStartTrackingTouch( SeekBar seekBar) {
+
+
+                    }
+                    @Override
+                    public void onStopTrackingTouch( SeekBar seekBar) {
+
+
+                    }
+
+                };
+
+        sbRandom.setOnSeekBarChangeListener(
+
+                new SeekBar.OnSeekBarChangeListener() {
+
+                    @Override
+                    public void onProgressChanged( SeekBar seekBar, int progress, boolean fromUser) {
+                        Randomness = progress;
+
+                        if (Randomness > Usefulness && Randomness > Uselessness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+
+                        }
+                        else if (Randomness < Usefulness && Randomness > Uselessness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+                        }
+
+                        else if (Randomness > Usefulness && Randomness < Uselessness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+                        }
+                        else if (Randomness < Usefulness && Randomness < Uselessness) {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+
+                        }
+
+                        else {
+
+//WebView set settings/creation of pages
+                            WebSettings webSettings = wvWebMain.getSettings();
+                            webSettings.setJavaScriptEnabled(true);
+                            wvWebMain.loadUrl("http://");
+
+                        }
+
+                    }
+                    @Override
+                    public void onStartTrackingTouch( SeekBar seekBar) {
+
+
+                    }
+                    @Override
+                    public void onStopTrackingTouch( SeekBar seekBar) {
+
+
+                    }
+
+                } );
 
     }
-    public void SeekingMovement(SeekBar sbUseless, SeekBar sbUseful, SeekBar sbRandom,
-                                Integer usefulness, Integer uselessness, Integer randomness) {
-
-    }
+*/
 }

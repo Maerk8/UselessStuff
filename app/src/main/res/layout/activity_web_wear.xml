@@ -42,7 +42,11 @@
     <SeekBar
         android:layout_width="345dp"
         android:layout_height="wrap_content"
-        android:id="@+id/sbUseless" />
+        android:id="@+id/sbUseless"
+        android:indeterminate="false"
+        android:longClickable="false"
+        android:max="100"
+        android:progress="0" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +59,10 @@
     <SeekBar
         android:layout_width="348dp"
         android:layout_height="wrap_content"
-        android:id="@+id/sbUseful" />
+        android:id="@+id/sbUseful"
+        android:max="100"
+        android:progress="0"
+        android:onClick="Seekinthebar" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,6 +76,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/sbRandom"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:max="100"
+        android:progress="0" />
 
 </LinearLayout>
