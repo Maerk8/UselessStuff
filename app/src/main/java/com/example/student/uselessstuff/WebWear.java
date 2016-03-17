@@ -46,6 +46,7 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
                     wvWebMain.loadUrl("http://www.everydayim.com/");
                     txtWebSite.setText("http//www.everydayim.com/");
 
@@ -56,6 +57,7 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
                     wvWebMain.loadUrl("http://www.sanger.dk/");
                     txtWebSite.setText("http://www.sanger.dk/");
 
@@ -66,6 +68,7 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
                     wvWebMain.loadUrl("http://www.taghua.com/");
                     txtWebSite.setText("http://www.taghua.com/");
 
@@ -75,8 +78,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://tencents.info/");
-                    txtWebSite.setText("http://tencents.info/");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.tencents.info/");
+                    txtWebSite.setText("http://www.tencents.info/");
 
                 }
 
@@ -85,8 +89,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://leekspin.com/");
-                    txtWebSite.setText("http://leekspin.com/");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.leekspin.com/");
+                    txtWebSite.setText("http://www.leekspin.com/");
 
                 }
             }
@@ -112,7 +117,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.patience-is-a-virtue.org/");
+                    txtWebSite.setText("http://www.patience-is-a-virtue.org/");
 
 
                 }
@@ -121,7 +128,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.baconsizzling.com/");
+                    txtWebSite.setText("http://www.baconsizzling.com/");
 
                 }
 
@@ -130,7 +139,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.unicodesnowmanforyou.com/");
+                    txtWebSite.setText("http://www.unicodesnowmanforyou.com/");
 
                 }
                 else if (Usefulness < Uselessness && Usefulness < Randomness) {
@@ -138,7 +149,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.quickestquotes.tumblr.com/");
+                    txtWebSite.setText("http://www.quickestquotes.tumblr.com/");
 
 
                 }
@@ -148,7 +161,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.wutdafuk.com/");
+                    txtWebSite.setText("http://www.wutdafuk.com/");
 
                 }
             }
@@ -174,7 +189,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.corgiorgy.com/");
+                    txtWebSite.setText("http://www.corgiorgy.com/");
 
 
                 }
@@ -183,7 +200,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.hardcoreprawnlawn.com/");
+                    txtWebSite.setText("http://www.hardcoreprawnlawn.com/");
 
                 }
 
@@ -192,7 +211,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.semanticresponsiveillustration.com/");
+                    txtWebSite.setText("http://www.semanticresponsiveillustration.com/");
 
                 }
                 else if (Randomness < Usefulness && Randomness < Uselessness) {
@@ -200,7 +221,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.secretsfornicotine.com/");
+                    txtWebSite.setText("http://www.secretsfornicotine.com/");
 
 
                 }
@@ -210,7 +233,9 @@ public class WebWear extends AppCompatActivity {
 //WebView set settings/creation of pages
                     WebSettings webSettings = wvWebMain.getSettings();
                     webSettings.setJavaScriptEnabled(true);
-                    wvWebMain.loadUrl("http://");
+                    webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+                    wvWebMain.loadUrl("http://www.muchbetterthanthis.com/");
+                    txtWebSite.setText("http://www.muchbetterthanthis.com/");
 
                 }
             }
